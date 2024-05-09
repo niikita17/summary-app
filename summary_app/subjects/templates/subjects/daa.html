@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- down chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- right chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- sell tag -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- location  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- email -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- search -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- translate -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- calendar -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- play -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- note -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- air -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- plus -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- 3 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- code -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Smart Summary</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="top-container">
+        <ul class="dropdowns">
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >University<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >Branch<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+        </ul>
+
+        <div id="logo">
+          <a href="main.html"
+            ><img src="logo.png" height="30px" width="160px"
+          /></a>
+        </div>
+        <ul class="interactions">
+          <li class="sign-in">
+            <a href="#" style="padding: 0 20px 0 20px">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="topic-container">
+      <ul class="topics">
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="{% url 'ai' %}">Artificial Intelligence</a></li>
+        <li><a href="{% url 'cc' %}">Machine Learning</a></li>
+        <li><a href="{% url 'cn' %}">Cloud Computing</a></li>
+        <li><a href="{% url 'daa' %}">Software Engineering</a></li>
+        <li><a href="{% url 'dbs' %}">Computer Network</a></li>
+        <li><a href="{% url 'ml' %}">Operating System</a></li>
+        <li><a href="{% url 'oops' %}">DBMS</a></li>
+        <li><a href="{% url 'os' %}">OOPs</a></li>
+        <li><a href="{% url 'se' %}">DAA</a></li>
+        <li>
+          <a href="daa.html"><div class="footer-link-heading">DAA</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="article-container">
+        <div class="sidebar">
+          <ul class="sidebar-menu">
+            <li><a href="#unit1">UNIT 1: Introduction to Cloud</a></li>
+            <li><a href="#unit2">UNIT 2: Cloud Computing Architecture</a></li>
+            <li>
+              <a href="#unit3">UNIT 3: Defining the Clouds for Enterprise</a>
+            </li>
+            <li>
+              <a href="#unit4">UNIT 4: Aneka: Cloud Application Platform</a>
+            </li>
+            <li>
+              <a href="#unit5"
+                >UNIT 5: Cloud Applications and Cloud Platforms in Industry</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-content">
+          <div id="unit1" class="formatted-text">
+            <!-- Unit 1 text -->
+            <h2>UNIT 1: Introduction</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+              lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus
+              et ultrices posuere cubilia curae; Nulla facilisi. Nulla vitae
+              sapien ut lorem dapibus euismod. Cras varius, tortor sed consequat
+              ultrices, erat augue pulvinar felis, id consectetur velit mi at
+              sapien. Duis convallis, lorem vel ullamcorper aliquet, neque orci
+              iaculis nisi, ac fermentum odio nulla id quam. Cras eget gravida
+              justo. Pellentesque vel tortor libero. Nulla nec odio in justo
+              tincidunt rhoncus.
+            </p>
+          </div>
+
+          <div id="unit2" class="formatted-text">
+            <!-- Unit 2 text -->
+            <h2>UNIT 2: Combinational Digital Circuits</h2>
+            <br />
+            <p>
+              Phasellus aliquet, quam eget posuere feugiat, nunc dui interdum
+              urna, in venenatis lorem tortor eu libero. Nam vitae augue non
+              magna viverra blandit. Ut sed odio et enim gravida viverra.
+              Vestibulum sed varius libero. Ut eleifend lorem vitae ipsum
+              malesuada, sit amet vehicula felis hendrerit. Proin fringilla sem
+              et velit rhoncus ultrices. Suspendisse potenti. Donec vel magna eu
+              sapien suscipit rutrum non at orci. Sed tincidunt, orci at
+              efficitur tempor, arcu libero sollicitudin nunc, at iaculis lorem
+              purus nec eros.
+            </p>
+          </div>
+
+          <div id="unit3" class="formatted-text">
+            <!-- Unit 3 text -->
+            <h2>UNIT 3: Sequential circuits and systems</h2>
+            <br />
+            <p>
+              Maecenas nec sem justo. Phasellus magna. Fusce ac felis sit amet
+              ligula pharetra condimentum. Sed fringilla mauris sit amet nibh.
+              Phasellus dolor. Pellentesque libero tortor, tincidunt et,
+              tincidunt eget, semper nec, quam. Duis sapien nunc, commodo et,
+              interdum suscipit, sollicitudin et, dolor. Vestibulum at velit
+              eget mauris placerat eleifend.
+            </p>
+          </div>
+
+          <div id="unit4" class="formatted-text">
+            <!-- Unit 4 text -->
+            <h2>UNIT 4: Fundamentals of Microprocessors</h2>
+            <br />
+            <p>
+              Aliquam id dolor. Phasellus nec sem in justo pellentesque
+              facilisis. Curabitur at lacus ac velit ornare lobortis. Curabitur
+              blandit mollis lacus. Praesent vestibulum dapibus nibh. Fusce
+              commodo aliquam arcu. Aliquam erat volutpat. Aliquam vestibulum
+              morbi blandit cursus risus at ultrices. Morbi scelerisque luctus
+              velit. Etiam rhoncus.
+            </p>
+          </div>
+
+          <div id="unit5" class="formatted-text">
+            <!-- Unit 5 text -->
+            <h2>UNIT 5: 8086 Instruction Set and Programming</h2>
+            <br />
+            <p>
+              Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+              Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+              consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+              in, viverra quis, feugiat a, tellus.
+            </p>
+          </div>
+        </div>
+
+        <!-- New section for notes -->
+        <form method="post">
+          {% csrf_token %}
+          <div class="notes-section">
+            <h2>Save Your Useful Notes</h2>
+            <input
+              type="text"
+              name="subject_title"
+              placeholder="subject_title"
+              id="subject_title"
+              value="Artifical Intelligence"
+            />
+
+            <input type="text" name="title" placeholder="title" id="title" />
+            <div class="input-container">
+              <textarea
+                id="text"
+                name="text"
+                rows="10"
+                cols="50"
+                placeholder="Enter your notes here..."
+              ></textarea>
+            </div>
+            <br />
+            <button id="save-btn" type="submit">Save</button>
+          </div>
+        </form>
+        <a href="{% url 'allnotes' %}" class="home-button">view all notes;</a>
+        <a href="main.html" class="home-button">&#8962;</a>
+      </div>
+      x
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-link-heading">
+          Contact Us
+          <div class="gfg-info">
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=majorproject2024cse@gmail.com&su=&body=&bcc="
+              class="gfg-info-elems"
+              ><span
+                class="material-symbols-outlined"
+                style="color: var(--gfg-green); padding: 5px"
+                >mail</span
+              >majorproject2024cse@gmail.com</a
+            >
+          </div>
+
+          <a href="about.html"
+            ><div class="footer-link-heading">About Us</div></a
+          >
+        </div>
+
+        <div class="footer-strip"></div>
+      </div>
+    </footer>
+  </body>
+</html>

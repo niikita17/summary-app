@@ -1,0 +1,35 @@
+# Byte-compiled Python files
+*.pyc
+__pycache__
+
+# Django media files
+media/
+
+# SQLite database file
+db.sqlite3
+
+# Secret key settings
+summary_app/local_settings.py
+
+# Virtual environment directory
+env/
+
+# IDE files (e.g., for PyCharm)
+.idea/
+
+# Logs
+*.log
+
+# Compiled Python files
+*.pyo
+
+# Environment variables file
+.env
+
+# Ignore migrations, but not the __init__.py files
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py
+
+# Ignore static files collected by Django
+staticfiles/

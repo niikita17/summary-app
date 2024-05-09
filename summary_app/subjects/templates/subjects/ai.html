@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- down chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- right chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- sell tag -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- location  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- email -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- search -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- translate -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- calendar -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- play -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- note -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- air -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- plus -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- 3 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- code -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Smart Summary</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="top-container">
+        <ul class="dropdowns">
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >University<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >Branch<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+        </ul>
+
+        <div id="logo">
+          <a href="main.html"
+            ><img src="logo.png" height="30px" width="160px"
+          /></a>
+        </div>
+
+        <ul class="interactions">
+          <li class="sign-in">
+            <a href="{% url 'registration' %}" style="padding: 0 20px 0 20px"
+              >Sign In</a
+            >
+          </li>
+        </ul>
+        <ul class="interactions">
+          <li class="sign-in">
+            <a href="{% url 'logout' %}" style="padding: 0 20px 0 20px"
+              >Sign OUT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="topic-container">
+      <ul class="topics">
+        <li><a href="dsa.html">DSA</a></li>
+        <li><a href="{% url 'ai' %}">Artificial Intelligence</a></li>
+        <li><a href="{% url 'cc' %}">Machine Learning</a></li>
+        <li><a href="{% url 'cn' %}">Cloud Computing</a></li>
+        <li><a href="{% url 'daa' %}">Software Engineering</a></li>
+        <li><a href="{% url 'dbs' %}">Computer Network</a></li>
+        <li><a href="{% url 'ml' %}">Operating System</a></li>
+        <li><a href="{% url 'oops' %}">DBMS</a></li>
+        <li><a href="{% url 'os' %}">OOPs</a></li>
+        <li><a href="{% url 'se' %}">DAA</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="article-container">
+        <div class="sidebar">
+          <ul class="sidebar-menu">
+            <li><a href="#unit1">UNIT 1: Introduction to Cloud</a></li>
+            <li><a href="#unit2">UNIT 2: Cloud Computing Architecture</a></li>
+            <li>
+              <a href="#unit3">UNIT 3: Defining the Clouds for Enterprise</a>
+            </li>
+            <li>
+              <a href="#unit4">UNIT 4: Aneka: Cloud Application Platform</a>
+            </li>
+            <li>
+              <a href="#unit5"
+                >UNIT 5: Cloud Applications and Cloud Platforms in Industry</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-content">
+          <div id="unit1" class="formatted-text">
+            <!-- Unit 1 text -->
+            <h2>UNIT 1: Introduction</h2>
+            <br />
+            <section>
+              <h3>1.1 What is Artificial Intelligence?</h3>
+              <br />
+              <p>
+                Artificial Intelligence (AI) is a rapidly evolving field in
+                computer science, aiming to create intelligent machines capable
+                of human-like behavior and decision-making. It encompasses a
+                wide range of applications, from self-driving cars to playing
+                games like chess and composing music. AI seeks to replicate
+                human cognitive abilities such as learning, reasoning, and
+                problem-solving. Unlike traditional programming, AI allows
+                machines to operate autonomously, learning from their
+                environment without explicit programming for every task. The
+                term "Artificial Intelligence" combines "artificial," meaning
+                man-made, with "intelligence," referring to thinking power. AI
+                systems are designed to exhibit traits like adaptability,
+                learning, and autonomous decision-making. Despite its
+                contemporary popularity, the concept of AI has historical roots,
+                with references to mechanical beings in ancient myths.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>1.2 Foundations of AI :</h3>
+              <br />
+              <p>
+                Artificial Intelligence (AI) draws from various disciplines to
+                form its foundation. These disciplines include mathematics,
+                biology, psychology, sociology, computer science, and
+                neuroscience. Understanding intelligence involves recognizing
+                components like reasoning, learning, problem-solving,
+                perception, and language understanding. Philosophical inquiries
+                into AI's foundation date back to ancient times, with
+                Aristotle's exploration of rationality and reasoning. Descartes
+                introduced dualism, suggesting the mind operates beyond physical
+                laws, while materialism posits the brain's operation as the
+                basis of the mind. Empiricism addresses knowledge acquisition
+                from sensory experiences, while logical positivism combines
+                rationalism and empiricism. Mathematics plays a crucial role in
+                AI, particularly in logic, computation, and probability. Logical
+                formalization started with Boole's propositional logic and
+                Frege's extension to first-order logic. Godel's incompleteness
+                theorem highlights the limitations of logical deduction,
+                motivating Turing's exploration of computability and the
+                Church-Turing thesis. Economics contributes decision theory,
+                exploring rational decision-making under uncertainty. Game
+                theory analyzes strategic interactions, while operations
+                research deals with sequential decision problems. Herbert
+                Simon's concept of satisficing provides insights into human
+                decision-making. Neuroscience offers insights into brain
+                function, particularly through studies of neurons and brain
+                localization. Broca's work on speech production localization and
+                Golgi's staining technique for observing neurons were pivotal.
+                Mathematical models applied by Rashevsky contributed to
+                understanding the nervous system. Computer Engineering: The
+                evolution of computing hardware, from early machines like the
+                Colossus and ENIAC to modern CPUs, has been pivotal for AI
+                development. Figures like Alan Turing contributed significantly
+                to early AI efforts. Control Theory and Cybernetics: Led by
+                Norbert Wiener, Control Theory explored self-regulating feedback
+                systems, providing insights into AI's adaptive behavior. It
+                emphasized minimizing "error" between current and goal states.
+                Linguistics Intersection: Linguistics intersected with AI,
+                notably through Noam Chomsky's theories, leading to
+                computational linguistics and natural language processing.
+                Understanding language complexity became crucial for AI
+                advancement.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>1.3 History of AI :</h3>
+              <br />
+              <p>
+                Artificial Intelligence (AI) has a rich history dating back to
+                the mid-20th century. Its origins trace back to Warren McCulloch
+                and Walter Pitts' work on artificial neurons in 1943, followed
+                by Donald Hebb's development of Hebbian learning in 1949. In
+                1950, Alan Turing proposed the Turing test to assess machines'
+                intelligent behavior, marking a significant milestone. The term
+                "Artificial Intelligence" was coined in 1956 by John McCarthy at
+                the Dartmouth Conference, establishing AI as an academic field.
+                The early years saw the creation of the first AI program, Logic
+                Theorist, by Allen Newell and Herbert A. Simon in 1955, and the
+                development of high-level computer languages like FORTRAN and
+                LISP. Subsequent decades witnessed milestones like Joseph
+                Weizenbaum's creation of the ELIZA chatbot in 1966 and the
+                construction of the first intelligent humanoid robot, WABOT-1,
+                in 1972. However, AI research faced challenges during the AI
+                winters of 1974-1980 and 1987-1993, characterized by funding
+                shortages and decreased public interest. Despite setbacks, AI
+                experienced resurgence with the advent of Expert Systems in the
+                1980s, which emulated human decision-making. The emergence of
+                intelligent agents in the 1990s marked another milestone,
+                highlighted by IBM Deep Blue defeating chess champion Gary
+                Kasparov in 1997. Recent years have seen remarkable
+                advancements, including IBM's Watson winning Jeopardy in 2011,
+                Google's launch of Google Now in 2012, and the development of
+                chatbots like Eugene Goostman, which won the Turing test in
+                2014. Notable achievements include IBM's Project Debater
+                engaging in complex debates and Google's Duplex AI making
+                natural language phone calls, showcasing AI's capabilities.
+                Today, AI stands at the forefront of technological innovation,
+                with deep learning, big data, and artificial general
+                intelligence driving advancements. Major companies like Google,
+                Facebook, IBM, and Amazon are heavily invested in AI research,
+                promising an inspiring future of high intelligence and
+                transformative technologies.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>1.4 State of Art of AI :</h3>
+              <br />
+              <p>
+                Artificial Intelligence (AI) has made significant strides in
+                various domains, showcasing its capabilities across different
+                applications. In robotics, companies like Tesla have developed
+                autonomous vehicles, while iRobot Corporation's Roomba serves as
+                a popular robotic vacuum cleaner for home use. AI-powered speech
+                recognition systems like Google Assistant and Siri have
+                revolutionized customer interactions, enabling automated
+                conversations for tasks such as flight booking. Autonomous
+                planning and scheduling have seen breakthroughs with NASA's
+                Remote Agent program, which controlled spacecraft operations
+                autonomously, and subsequent programs like MAPGEN and MEXAR2
+                managing missions for Mars exploration. Game-playing AI reached
+                new heights when IBM's Deep Blue defeated world chess champion
+                Garry Kasparov, demonstrating sophisticated decision-making
+                abilities. Spam fighting algorithms, utilized by platforms like
+                Truecaller and Spam Detector, employ learning algorithms to
+                classify messages efficiently, alleviating the burden of spam
+                for users. Logistics planning has been revolutionized by AI,
+                exemplified by DARPA's DART system, which significantly
+                streamlined transportation logistics during the Persian Gulf
+                crisis. Machine translation has seen advancements with programs
+                like Google Translate, leveraging statistical models to
+                translate between languages accurately. These examples
+                illustrate the tangible impact of AI in solving real-world
+                problems, emphasizing the role of science, engineering, and
+                mathematics in AI development. From robotic vehicles navigating
+                complex terrains to speech recognition systems assisting
+                travelers, AI continues to push boundaries, offering solutions
+                that were once deemed science fiction. As AI technologies
+                mature, they promise to further transform industries, driving
+                innovation and shaping the future of engineering and technology.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>1.5 Intelligent Agents : Agents and Environment :</h3>
+              <br />
+              <p>
+                Agents in Artificial Intelligence (AI) play a pivotal role in
+                perceiving their environment and taking actions based on sensory
+                inputs through actuators. These agents can be categorized into
+                five classes, each exhibiting varying degrees of perceived
+                intelligence and capability for improving performance over time.
+                Simple Reflex Agent: Simple reflex agents make decisions based
+                solely on current percepts, disregarding percept history. They
+                operate on condition-action rules, suitable for fully observable
+                environments. However, their design approach poses limitations
+                due to their limited intelligence and lack of adaptability to
+                environmental changes. Model-based Reflex Agent: Model-based
+                agents operate in partially observable environments, leveraging
+                a model of the world and internal state representation based on
+                percept history. These agents track situations and update their
+                state based on how the world evolves and how their actions
+                affect it. Goal-based Agents: In situations where knowledge of
+                the current state is insufficient, goal-based agents come into
+                play. These agents possess goal information, enabling them to
+                choose actions aimed at achieving predefined objectives. They
+                employ searching and planning to consider various action
+                sequences, making them proactive in achieving goals.
+                Utility-based Agents: Utility-based agents, akin to goal-based
+                agents, incorporate utility measurement to evaluate the
+                effectiveness of actions in achieving goals. They prioritize
+                actions based on utility function mappings, particularly useful
+                when multiple alternatives exist, ensuring optimal
+                decision-making. Learning Agents: Learning agents possess the
+                capability to learn from past experiences, adapting and
+                improving their performance over time. These agents comprise
+                learning elements responsible for improvement, critics providing
+                feedback, performance elements selecting actions, and problem
+                generators suggesting new actions for informative experiences.
+                Intelligent agents encompass a broad spectrum, including human
+                agents, robotic agents, and software agents, all characterized
+                by their ability to perceive and act upon their environment.
+                Rational agents, adhering to predefined rules, aim to maximize
+                performance by making rational decisions based on preferences
+                and uncertainty modeling. The agent function defines an agent's
+                behavior, mapping percept sequences to actions, while the agent
+                program implements this function within a physical system.
+                Understanding agents facilitates system analysis and design,
+                emphasizing AI's role in decision-making within complex
+                environments.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>1.6 Good Behaviour : The concept of Rationality :</h3>
+              <br />
+              <p>
+                The rationality of an agent is measured by its performance
+                measure. Rationality can be judged on the basis of following
+                points: Performance measure which defines the success criterion.
+                Agent prior knowledge of its environment. Best possible actions
+                that an agent can perform. The sequence of percepts. An
+                environment is everything in the world which surrounds the
+                agent, but it is not a part of an agent itself. An environment
+                can be described as a situation in which an agent is present.
+                The environment is where agent lives, operate and provide the
+                agent with something to sense and act upon it. An environment is
+                mostly said to be non-feministic.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>The Nature of Environment:</h3>
+              <br />
+              <p>Features of Environment</p>
+              <br />
+              <p>
+                As per Russell and Norvig, an environment can have various
+                features from the point of view of an agent:
+              </p>
+              <ul>
+                <li>
+                  <strong>Fully observable vs Partially Observable:</strong
+                  ><br />
+                  If an agent sensor can sense or access the complete state of
+                  an environment at each point of time then it is a fully
+                  observable environment, else it is partially observable. A
+                  fully observable environment is easy as there is no need to
+                  maintain the internal state to keep track history of the
+                  world. An agent with no sensors in all environments then such
+                  an environment is called as unobservable.
+                </li>
+                <br />
+                <li>
+                  <strong>Deterministic vs Stochastic:</strong><br />
+                  If an agent's current state and selected action can completely
+                  determine the next state of the environment, then such
+                  environment is called a deterministic environment. A
+                  stochastic environment is random in nature and cannot be
+                  determined completely by an agent. In a deterministic, fully
+                  observable environment, agent does not need to worry about
+                  uncertainty.
+                </li>
+                <br />
+                <li>
+                  <strong>Episodic vs Sequential:</strong><br />
+                  In an episodic environment, there is a series of one-shot
+                  actions, and only the current percept is required for the
+                  action. However, in Sequential environment, an agent requires
+                  memory of past actions to determine the next best actions.
+                </li>
+                <br />
+                <li>
+                  <strong>Single-agent vs Multi-agent:</strong><br />
+                  If only one agent is involved in an environment, and operating
+                  by itself then such an environment is called single agent
+                  environment. However, if multiple agents are operating in an
+                  environment, then such an environment is called a multi-agent
+                  environment. The agent design problems in the multi-agent
+                  environment are different from single agent environment.
+                </li>
+                <br />
+                <li>
+                  <strong>Static vs Dynamic:</strong><br />
+                  If the environment can change itself while an agent is
+                  deliberating then such environment is called a dynamic
+                  environment else it is called a static environment. Static
+                  environments are easy to deal because an agent does not need
+                  to continue looking at the world while deciding for an action.
+                  However for dynamic environment, agents need to keep looking
+                  at the world at each action. Taxi driving is an example of a
+                  dynamic environment whereas Crossword puzzles are an example
+                  of a static environment.
+                </li>
+                <br />
+                <li>
+                  <strong>Discrete vs Continuous:</strong><br />
+                  If in an environment there are a finite number of percepts and
+                  actions that can be performed within it, then such an
+                  environment is called a discrete environment else it is called
+                  continuous environment. A chess gamecomes under discrete
+                  environment as there is a finite number of moves that can be
+                  performed. A self-driving car is an example of a continuous
+                  environment.
+                </li>
+                <br />
+                <li>
+                  <strong>Known vs Unknown:</strong><br />
+                  Known and unknown are not actually a feature of an
+                  environment, but it is an agent's state of knowledge to
+                  perform an action. In a known environment, the results for all
+                  actions are known to the agent. While in unknown environment,
+                  agent needs to learn how it works in order to perform an
+                  action. It is quite possible that a known environment to be
+                  partially observable and an Unknown environment to be fully
+                  observable.
+                </li>
+                <br />
+                <li>
+                  <strong>Accessible vs Inaccessible:</strong><br />
+                  If an agent can obtain complete and accurate information about
+                  the state's environment, then such an environment is called an
+                  Accessible environment else it is called inaccessible. An
+                  empty room whose state can be defined by its temperature is an
+                  example of an accessible environment. Information about an
+                  event on earth is an example of Inaccessible environment.
+                </li>
+              </ul>
+              <br />
+            </section>
+
+            <section>
+              <h3>Structure of an AI Agent:</h3>
+              <br />
+              <p>
+                The task of AI is to design an agent program which implements
+                the agent function. The structure of an intelligent agent is a
+                combination of architecture and agent program. It can be viewed
+                as:
+              </p>
+              <p>Agent = Architecture + Agent program</p>
+              <p>
+                Following are the main three terms involved in the structure of
+                an AI agent:
+              </p>
+              <ul>
+                <li>
+                  <strong>Architecture:</strong> Architecture is machinery that
+                  an AI agent executes on.
+                </li>
+                <li>
+                  <strong>Agent Function:</strong> Agent function is used to map
+                  a percept to an action. f:P* → A
+                </li>
+                <li>
+                  <strong>Agent program:</strong> Agent program is an
+                  implementation of agent function. An agent program executes on
+                  the physical architecture to produce function f.
+                </li>
+              </ul>
+              <br />
+              <p><strong>PEAS Representation:</strong></p>
+              <p>
+                PEAS is a type of model on which an AI agent works upon. When we
+                define an AI agent or rational agent, then we can group its
+                properties under PEAS representation model. It is made up of
+                four words:
+              </p>
+              <ul>
+                <li><strong>P:</strong> Performance measure</li>
+                <li><strong>E:</strong> Environment</li>
+                <li><strong>A:</strong> Actuators</li>
+                <li><strong>S:</strong> Sensors</li>
+              </ul>
+              <p>
+                Here performance measure is the objective for the success of an
+                agent's behavior.
+              </p>
+              <br />
+              <p><strong>PEAS for self-driving cars:</strong></p>
+              <p>
+                Let's suppose a self-driving car then PEAS representation will
+                be:
+              </p>
+              <ul>
+                <li>
+                  <strong>Performance:</strong> Safety, time, legal drive,
+                  comfort
+                </li>
+                <li>
+                  <strong>Environment:</strong> Roads, other vehicles, road
+                  signs, pedestrian
+                </li>
+                <li>
+                  <strong>Actuators:</strong> Steering, accelerator, brake,
+                  signal, horn
+                </li>
+                <li>
+                  <strong>Sensors:</strong> Camera, GPS, speedometer, odometer,
+                  accelerometer, sonar
+                </li>
+              </ul>
+              <br />
+            </section>
+          </div>
+
+          <div id="unit2" class="formatted-text">
+            <!-- Unit 2 text -->
+            <h2>UNIT 2: Problem-solving</h2>
+            <br />
+            <section>
+              <h3>2.1 Solving Problem by Searching:</h3>
+              <br />
+              <p>
+                In Artificial Intelligence, search algorithms play a pivotal
+                role, serving as a fundamental area of study. They are essential
+                for problem-solving agents, contrasting with reflex agents that
+                rely on direct state-to-action mappings. Problem-solving agents,
+                unlike reflex agents, consider future actions and the
+                desirability of outcomes, making them more adaptable to complex
+                environments. These agents employ atomic representations of
+                states, with no internal structure visible to the algorithms, in
+                contrast to planning agents that utilize more advanced
+                structured representations.
+              </p>
+              <br />
+              <p>
+                The discussion on problem-solving agents begins with precise
+                definitions of problems and their solutions, accompanied by
+                illustrative examples. General-purpose search algorithms are
+                then introduced, ranging from uninformed algorithms, which lack
+                information about the problem beyond its definition, to informed
+                algorithms that perform better with guidance on where to search.
+              </p>
+              <br />
+              <p>
+                This chapter primarily focuses on task environments where the
+                solution is a fixed sequence of actions, leaving the more
+                complex scenarios for later discussions. Concepts such as
+                asymptotic complexity and NP-completeness are introduced,
+                offering readers insights into the computational challenges
+                involved in problem-solving.
+              </p>
+              <br />
+              <p>
+                Overall, understanding search algorithms in AI is crucial for
+                developing intelligent agents capable of navigating diverse
+                environments efficiently. Through various search techniques,
+                agents can explore and identify optimal solutions, paving the
+                way for advancements in artificial intelligence and
+                problem-solving applications.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.2 Problem-solving agents:</h3>
+              <br />
+              <p>
+                In Artificial Intelligence, problem-solving agents utilize
+                search techniques as universal methods to tackle various
+                problems effectively. These agents, also known as rational
+                agents, rely on search algorithms to navigate through search
+                spaces, beginning from a start state and progressing towards a
+                goal state while adhering to defined search terminologies. Key
+                components of search algorithms include the search space, start
+                state, goal test, search tree, actions, transition model, path
+                cost, solution, and optimal solution, with properties such as
+                completeness, optimality, time complexity, and space complexity
+                crucial for evaluating their efficiency.
+              </p>
+              <br />
+              <p>
+                Search algorithms can be categorized into uninformed (blind
+                search) and informed (heuristic search) algorithms based on the
+                presence of domain knowledge. Uninformed search methods operate
+                without domain knowledge, employing brute-force approaches to
+                explore search spaces, whereas informed search strategies
+                utilize problem information to guide the search more
+                efficiently. Examples of uninformed search algorithms include
+                breadth-first search, depth-first search, and iterative
+                deepening depth-first search, while informed search algorithms
+                like greedy search and A* search leverage heuristics to find
+                solutions effectively.
+              </p>
+              <br />
+              <p>
+                Problem-solving agents adopt goals to simplify decision-making
+                processes, formulating goals based on current situations and
+                performance measures. The process of problem formulation
+                involves defining initial states, actions, transition models,
+                goal tests, and path cost functions. Abstraction plays a vital
+                role in problem formulation, simplifying state descriptions and
+                action sequences to focus on relevant aspects of the problem
+                while disregarding irrelevant details. Effective abstraction
+                enables agents to handle complex real-world scenarios
+                efficiently.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.3 Example Problem:</h3>
+              <br />
+              <p>
+                The provided text outlines various problem-solving approaches
+                applied to both toy and real-world problems, highlighting
+                examples such as the vacuum world, the 8-puzzle, the 8-queens
+                problem, and more. Toy problems are simplified scenarios used to
+                demonstrate problem-solving methods, whereas real-world problems
+                reflect actual concerns and complexities.
+              </p>
+              <br />
+              <p>
+                In toy problems like the vacuum world and the 8-puzzle, discrete
+                states and actions are defined, with clear initial states,
+                actions, transition models, goal tests, and path costs. These
+                problems serve as benchmarks for evaluating search algorithms in
+                AI, with the 8-puzzle belonging to the NP-complete problem
+                family.
+              </p>
+              <br />
+              <p>
+                The 8-queens problem, on the other hand, challenges placing
+                queens on a chessboard without attacking each other. Different
+                formulations exist, such as incremental and complete-state
+                formulations, with varying state spaces and computational
+                complexities.
+              </p>
+              <br />
+              <p>
+                Real-world problems like route-finding, touring, VLSI layout,
+                robot navigation, and automatic assembly sequencing pose
+                additional complexities. These problems involve continuous
+                states and actions, with considerations for factors like time,
+                cost, spatial constraints, and sensor errors.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.4 Searching for Solution:</h3>
+              <br />
+              <p>Search Tree Construction:</p>
+              <br />
+              <p>
+                To solve a problem, search algorithms generate possible action
+                sequences forming a search tree.
+              </p>
+              <br />
+              <p>
+                The initial state node serves as the root, with branches
+                representing actions and nodes representing states.
+              </p>
+              <br />
+              <p>
+                Expansion involves applying legal actions to generate new
+                states, resulting in child nodes.
+              </p>
+              <br />
+              <p>Expansion and Frontier:</p>
+              <br />
+              <p>
+                After expansion, new child nodes are added to the frontier for
+                further consideration.
+              </p>
+              <br />
+              <p>
+                The frontier consists of leaf nodes available for expansion, and
+                it separates explored and unexplored regions in the state space.
+              </p>
+              <br />
+              <p>Search Strategy:</p>
+              <br />
+              <p>
+                Search algorithms choose which state to expand next based on a
+                search strategy.
+              </p>
+              <br />
+              <p>
+                The choice determines the direction of exploration and affects
+                the efficiency of finding a solution.
+              </p>
+              <br />
+              <p>Redundant Paths:</p>
+              <br />
+              <p>
+                Redundant paths, including loopy paths, lead to unnecessary
+                exploration in the search tree.
+              </p>
+              <br />
+              <p>
+                Algorithms should avoid redundant paths to prevent inefficiency
+                and potential failure.
+              </p>
+              <br />
+              <p>
+                Redundant paths arise in reversible actions and must be managed
+                appropriately.
+              </p>
+              <br />
+              <p>Infrastructure for Search Algorithms:</p>
+              <br />
+              <p>
+                Nodes represent states in the search tree and maintain essential
+                information such as parent, action, and path cost.
+              </p>
+              <br />
+              <p>
+                Data structures like queues and hash tables facilitate efficient
+                storage and retrieval of nodes and states.
+              </p>
+              <br />
+              <p>
+                Child nodes are generated from parent nodes based on applied
+                actions and problem-specific functions.
+              </p>
+              <br />
+              <p>Measuring Problem-Solving Performance:</p>
+              <br />
+              <p>
+                Performance evaluation criteria include completeness,
+                optimality, time complexity, and space complexity.
+              </p>
+              <br />
+              <p>
+                Complexity metrics depend on factors such as branching factor,
+                depth, and maximum path length.
+              </p>
+              <br />
+              <p>
+                Search cost and total cost assess the effectiveness of search
+                algorithms, considering both time and solution path length.
+              </p>
+              <br />
+              <p>Tradeoffs and Total Cost:</p>
+              <br />
+              <p>
+                Total cost combines search cost and solution path cost, allowing
+                for tradeoffs between computational effort and solution quality.
+              </p>
+              <br />
+              <p>
+                Agents may optimize their decisions based on total cost,
+                balancing the benefits of further computation against solution
+                improvement.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.4 Uninformed Search Strategies:</h3>
+              <br />
+              <p>
+                This section introduces the concept of uninformed search, also
+                known as blind search, where search strategies have no
+                additional information about states beyond what's provided in
+                the problem definition. The strategies can only generate
+                successors and determine whether a state is a goal or not.
+              </p>
+              <br />
+              <p><strong>Breadth-first Search (BFS)</strong></p>
+              <br />
+              <p>
+                BFS expands nodes level by level, starting from the root node.
+                It explores all nodes at a given depth before moving to the next
+                level. BFS uses a FIFO queue to maintain the frontier, ensuring
+                that nodes at shallower levels are expanded first. It guarantees
+                completeness and optimality if the path cost is nondecreasing.
+              </p>
+              <br />
+              <p><strong>Uniform-cost Search</strong></p>
+              <br />
+              <p>
+                Uniform-cost search expands nodes based on their path costs,
+                always choosing the node with the lowest path cost from the
+                frontier. It maintains a priority queue ordered by path cost.
+                Uniform-cost search is optimal and complete when all step costs
+                are equal.
+              </p>
+              <br />
+              <p><strong>Depth-first Search (DFS)</strong></p>
+              <br />
+              <p>
+                DFS always expands the deepest node in the current frontier. It
+                uses a LIFO queue, exploring the deepest unexpanded node first.
+                DFS can be implemented as either graph search or tree search.
+                It's not complete or optimal but has lower space complexity
+                compared to BFS.
+              </p>
+              <br />
+              <p><strong>Depth-limited Search</strong></p>
+              <br />
+              <p>
+                Depth-limited search sets a predetermined depth limit to avoid
+                infinite paths in infinite state spaces. It's a modified version
+                of DFS where nodes beyond the depth limit are treated as having
+                no successors. Depth-limited search can be incomplete and
+                nonoptimal depending on the chosen depth limit.
+              </p>
+              <br />
+              <p>
+                <strong>Iterative Deepening Depth-first Search (IDDFS)</strong>
+              </p>
+              <br />
+              <p>
+                IDDFS gradually increases the depth limit from 0 until a
+                solution is found. It combines the advantages of DFS and BFS,
+                maintaining modest memory requirements while guaranteeing
+                completeness and optimality. IDDFS repeatedly applies
+                depth-limited search with increasing limits until a solution is
+                found.
+              </p>
+              <br />
+              <p><strong>Bidirectional Search</strong></p>
+              <br />
+              <p>
+                Bidirectional search runs two simultaneous searches, one forward
+                from the initial state and one backward from the goal. The goal
+                is to meet in the middle, reducing the search space.
+                Bidirectional search is advantageous in terms of time complexity
+                but requires substantial memory due to maintaining frontiers
+                from both directions.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.5 Informed Search Strategies:</h3>
+              <br />
+              <p>
+                So far we have talked about the uninformed search algorithms
+                which looked through search space for all possible solutions of
+                the problem without having any additional knowledge about search
+                space. But informed search algorithm contains an array of
+                knowledge such as how far we are from the goal, path cost, how
+                to reach to goal node, etc. This knowledge help agents to
+                explore less to the search space and find more efficiently the
+                goal node.
+              </p>
+              <br />
+              <p>
+                The informed search algorithm is more useful for large search
+                space. Informed search algorithm uses the idea of heuristic, so
+                it is also called Heuristic search.
+              </p>
+              <br />
+              <p>
+                In the informed search we will discuss two main algorithms which
+                are given below:
+              </p>
+              <br />
+              <p><strong>Best First Search Algorithm(Greedy search)</strong></p>
+              <br />
+              <p>
+                Selects the path that seems best at each step based on heuristic
+                function h(n).
+              </p>
+              <br />
+              <p>
+                Combines advantages of depth-first and breadth-first search.
+              </p>
+              <br />
+              <p>Utilizes a priority queue.</p>
+              <br />
+              <p>
+                Not optimal, can behave like an unguided depth-first search.
+              </p>
+              <br />
+              <p>Time Complexity: O(b^m),</p>
+              <br />
+              <p>Space Complexity: O(b^m).</p>
+              <br />
+              <p>Incomplete.</p>
+              <br />
+              <p>
+                Example: Traversing a search problem using the greedy best-first
+                search algorithm.
+              </p>
+              <br />
+              <p><strong>A* Search Algorithm</strong></p>
+              <br />
+              <p>
+                Uses heuristic function h(n) and cost g(n) to find the shortest
+                path through the search space.
+              </p>
+              <br />
+              <p>
+                Combines features of Uniform-Cost Search (UCS) and greedy
+                best-first search.
+              </p>
+              <br />
+              <p>Optimal and complete.</p>
+              <br />
+              <p>More complex than other algorithms.</p>
+              <br />
+              <p>Not always produces the shortest path.</p>
+              <br />
+              <p>Memory-intensive for large-scale problems.</p>
+              <br />
+              <p>Time Complexity: O(b^d), Space Complexity: O(b^d).</p>
+              <br />
+              <p>Example: Traversing a graph using the A* algorithm.</p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.6 Heuristics function:</h3>
+              <br />
+              <p>Heuristic in Informed Search:</p>
+              <br />
+              <p>
+                Heuristic function estimates the distance from the current state
+                to the goal.
+              </p>
+              <br />
+              <p>It's denoted as h(n) and always yields a positive value.</p>
+              <br />
+              <p>
+                While not always providing the best solution, it ensures a good
+                solution in reasonable time.
+              </p>
+              <br />
+              <p>
+                <strong>Admissibility :</strong> h(n) ≤ h ∗ (n), where h∗(n) is
+                the estimated cost.
+              </p>
+              <br />
+              <p><strong>Pure Heuristic Search:</strong></p>
+              <br />
+              <p>Simplest form of heuristic search algorithms.</p>
+              <br />
+              <p>It expands nodes based on their heuristic value h(n).</p>
+              <br />
+              <p>Maintains OPEN and CLOSED lists.</p>
+              <br />
+              <p>
+                CLOSED list contains expanded nodes, while OPEN contains
+                unexpanded ones.
+              </p>
+              <br />
+              <p>
+                Each iteration expands the node with the lowest heuristic value.
+              </p>
+              <br />
+              <p>
+                Generates successors of the expanded node and adds it to the
+                CLOSED list.
+              </p>
+              <br />
+              <p>Continues until a goal state is found.</p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.7 Defining Constraint Satisfaction Problem:</h3>
+              <br />
+              <p>
+                Constraint Satisfaction Problems (CSPs) are a fundamental type
+                of AI problem where the objective is to find values for
+                variables that satisfy a set of constraints.
+              </p>
+              <br />
+              <p>
+                These problems are common in resource allocation, planning,
+                scheduling, and decision-making tasks in AI. CSPs consist of
+                three main components: variables, domains, and constraints.
+              </p>
+              <br />
+              <p>
+                Variables represent the entities that need to be determined,
+                while domains define the possible values that variables can
+                take. Constraints govern how variables relate to each other,
+                restricting the permissible combinations of values.
+              </p>
+              <br />
+              <p>
+                CSPs are typically represented by a finite set of variables,
+                non-empty domains for each variable, and a set of constraints.
+              </p>
+              <br />
+              <p>
+                CSP algorithms aim to systematically explore the solution space
+                until a solution satisfying all constraints is found. The
+                backtracking algorithm is a depth-first search method that
+                iteratively assigns values to variables and backtracks when a
+                constraint violation is encountered. Forward-checking, a variant
+                of backtracking, reduces the search space by applying local
+                consistency to eliminate inconsistent values.
+              </p>
+              <br />
+              <p>
+                Additionally, constraint propagation algorithms use local
+                consistency and inference to propagate constraints between
+                variables and remove inconsistent values from domain sets. These
+                algorithms condense the search space by iteratively enforcing
+                constraints.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.8 Constraint propagation: Inference in CSPs:</h3>
+              <br />
+              <p>
+                In Constraint Satisfaction Problems (CSPs), inference techniques
+                utilize constraints to deduce which variable/value pairs are
+                consistent and which are not.
+              </p>
+              <br />
+              <p>
+                These techniques include node consistency, arc consistency, path
+                consistency, and k-consistency. Constraint propagation is a
+                fundamental approach in CSPs, where constraints are used to
+                reduce the number of legal values for a variable, subsequently
+                impacting the legal values for other variables.
+              </p>
+              <br />
+              <p>
+                Local consistency, a key concept in CSPs, ensures that
+                constraints are satisfied locally within the problem network.
+              </p>
+              <br />
+              <p>
+                Node consistency ensures that all values in a variable's domain
+                satisfy its unary constraint. A network is node-consistent when
+                every variable in the network meets this criterion.
+              </p>
+              <br />
+              <p>
+                Arc consistency, on the other hand, ensures that every value in
+                a variable's domain satisfies its binary constraints.
+              </p>
+              <br />
+              <p>
+                A network achieves arc consistency when every variable is
+                arc-consistent with every other variable, tightening down the
+                domains using the binary constraints.
+              </p>
+              <br />
+              <p>
+                In the context of Sudoku, a popular CSP example, each square in
+                the puzzle represents a variable, with its domain initially
+                containing values from 1 to 9.
+              </p>
+              <br />
+              <p>
+                Pre-filled squares have domains consisting of single values,
+                while empty squares have domains with all possible values.
+              </p>
+              <br />
+              <p>
+                The constraints in Sudoku, such as the "AllDiff" constraint,
+                ensure that each row, column, and box of 9 squares contains
+                distinct values.
+              </p>
+              <br />
+              <p>
+                In summary, inference techniques like node and arc consistency,
+                along with constraint propagation, play crucial roles in solving
+                CSPs.
+              </p>
+              <br />
+              <p>
+                These techniques help reduce the search space by eliminating
+                inconsistent variable/value pairs, leading to efficient
+                solutions in various real-world applications.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.9 Backtracking search for CSPs:</h3>
+              <br />
+              <p>
+                The backtracking search algorithm is a core method for solving
+                Constraint Satisfaction Problems (CSPs) in Artificial
+                Intelligence. It systematically explores potential solutions by
+                selecting variables, assigning values, and checking constraints.
+              </p>
+              <br />
+              <p>
+                This process continues recursively until a solution is found or
+                until it determines that no solution exists. The algorithm
+                ensures completeness, meaning it will find a solution if one
+                exists within the given constraints.
+              </p>
+              <br />
+              <p>
+                However, its efficiency can degrade in scenarios with a large
+                number of variables and constraints due to its exponential time
+                complexity.
+              </p>
+              <br />
+              <p>
+                Nevertheless, its systematic approach and guarantee of
+                completeness make it an essential tool for tackling CSPs in
+                engineering exams. Understanding its principles, steps,
+                advantages, and limitations is crucial for success in such
+                exams.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.10 Local Search for CSPs:</h3>
+              <br />
+              <p>
+                Local search algorithms, particularly within Constraint
+                Satisfaction Problems (CSPs), offer heuristic approaches for
+                navigating solution spaces incrementally. They prioritize the
+                current state and iteratively move towards neighboring states,
+                aiming to satisfy problem constraints. This strategy proves
+                valuable in scenarios where exhaustive exploration is
+                impractical or when finding a complete solution is unnecessary.
+              </p>
+              <br />
+              <p><strong>Key Components:</strong></p>
+              <br />
+              <p>
+                <strong>Initial State:</strong> Local search begins with an
+                initial variable assignment, serving as the starting point.
+              </p>
+              <br />
+              <p>
+                <strong>Objective Function:</strong> Evaluates the quality of
+                assignments based on constraint satisfaction.
+              </p>
+              <br />
+              <p>
+                <strong>Neighbourhood Function:</strong> Defines neighboring
+                states reachable from the current assignment.
+              </p>
+              <br />
+              <p>
+                <strong>Move or Transition:</strong> Determines how to
+                transition from the current state to a neighboring state.
+              </p>
+              <br />
+              <p>
+                <strong>Termination Condition:</strong> Specifies when to stop
+                the search, based on solution quality or iteration count.
+              </p>
+              <br />
+              <p><strong>Operation of Local Search:</strong></p>
+              <br />
+              <p>Initialization: Starts with an initial assignment.</p>
+              <br />
+              <p>
+                Evaluation: Measures assignment quality using the objective
+                function.
+              </p>
+              <br />
+              <p>Neighbourhood Exploration: Generates neighboring states.</p>
+              <br />
+              <p>Transition: Moves to a selected neighboring state.</p>
+              <br />
+              <p>
+                Iteration and Termination: Continues until termination
+                conditions are met.
+              </p>
+              <br />
+              <p><strong>Variants of Local Search:</strong></p>
+              <br />
+              <p>
+                Hill Climbing: Progresses towards the best neighboring state but
+                may get stuck in local optima.
+              </p>
+              <br />
+              <p>
+                Simulated Annealing: Accepts inferior solutions
+                probabilistically to escape local optima.
+              </p>
+              <br />
+              <p>
+                Tabu Search: Prevents revisiting previous states to avoid
+                cycling.
+              </p>
+              <br />
+              <p>
+                Genetic Algorithms: Explores solution spaces based on
+                evolutionary principles.
+              </p>
+              <br />
+              <p>
+                Advantages include effectiveness for problems with extensive
+                solution spaces and avoidance of exhaustive exploration.
+                However, limitations include no guarantee of finding the optimal
+                solution and sensitivity to initial assignments and neighborhood
+                function choice.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.11 Structure of Problem:</h3>
+              <br />
+              <p>
+                In the domain of Artificial Intelligence, understanding the
+                structure of a problem is crucial for devising effective
+                solutions. This structure comprises several key components that
+                delineate the problem's context, goals, constraints, and
+                potential solution space.
+              </p>
+              <br />
+              <p>
+                The initial state serves as the starting point, providing the
+                baseline configuration from which the problem-solving process
+                commences. It sets the stage for subsequent actions and
+                transformations.
+              </p>
+              <br />
+              <p>
+                Conversely, the goal state represents the ultimate objective
+                that the problem-solving agent or algorithm aims to achieve.
+                Attaining the goal state signifies successful completion of the
+                problem-solving task.
+              </p>
+              <br />
+              <p>
+                Operators or actions define the permissible transitions between
+                states within the problem space. These actions enable the agent
+                to navigate through various states, exploring different pathways
+                towards the goal.
+              </p>
+              <br />
+              <p>
+                Constraints impose limitations or rules on the problem,
+                dictating which states or transitions are allowed. These
+                constraints ensure that the problem-solving process adheres to
+                specified criteria and constraints, constraining the solution
+                space accordingly.
+              </p>
+              <br />
+              <p>
+                The space of solutions encompasses all feasible states or
+                configurations that could lead from the initial state to the
+                goal state, while satisfying the problem's constraints. It
+                represents the entirety of potential solutions that the
+                problem-solving agent may explore.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.12 Adversarial Search:</h3>
+              <br />
+              <p>
+                Adversarial search, also known as game playing, involves
+                multiple agents with conflicting goals exploring the same search
+                space. Each agent acts as an opponent to the others, aiming to
+                maximize its performance while hindering its adversaries. In
+                multi-agent environments, agents must consider not only their
+                own actions but also those of their opponents. Adversarial
+                search strategies, like minimax and alpha-beta pruning, are used
+                to navigate decision trees efficiently. Understanding
+                adversarial search is crucial for designing intelligent systems
+                in various domains, such as game-playing agents and autonomous
+                vehicles.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.13 Optimal Decision in Games:</h3>
+              <br />
+              <p>
+                The Mini-max algorithm is a decision-making technique in game
+                theory and Artificial Intelligence used to determine optimal
+                moves in adversarial games. It operates by exploring the entire
+                game tree through a depth-first search, with two players, a
+                Maximizer, and a Minimizer, competing against each other. The
+                Maximizer aims to maximize its score, while the Minimizer aims
+                to minimize it. By recursively evaluating terminal states and
+                backtracking, the algorithm computes the optimal decision for
+                the current game state.
+              </p>
+              <br />
+              <p>
+                In the Mini-max algorithm, the entire game tree is traversed,
+                evaluating each terminal node to determine its utility value.
+                The Maximizer selects the node with the highest utility value,
+                while the Minimizer chooses the node with the lowest utility
+                value. This process continues until the algorithm reaches the
+                root node, representing the optimal move for the player.
+              </p>
+              <br />
+              <p>
+                While Mini-max is complete and optimal, ensuring a solution is
+                found if it exists and maximizing performance against an optimal
+                opponent, it suffers from exponential time complexity,
+                especially in complex games like Chess or Go. The branching
+                factor and depth of the game tree contribute to its
+                computational inefficiency. To address this limitation,
+                techniques like alpha-beta pruning are employed to reduce the
+                search space and improve efficiency.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>2.14 Alpha-Beta Pruning:</h3>
+              <br />
+              <p>
+                Alpha-beta pruning is a refinement of the Mini-max algorithm
+                used in adversarial games. It optimizes the search tree by
+                selectively eliminating branches that are unlikely to affect the
+                final decision. This pruning is based on two parameters, alpha
+                and beta, which represent the best choices found so far along
+                the Maximizer and Minimizer paths. By maintaining bounds on
+                possible outcomes, the algorithm reduces the search space
+                without compromising accuracy. Alpha-beta pruning operates
+                recursively, updating alpha and beta values during traversal to
+                determine which nodes to prune. The efficiency of alpha-beta
+                pruning relies on move ordering strategies to prioritize the
+                evaluation of more promising nodes. Overall, it significantly
+                improves the efficiency of Mini-max search, making it suitable
+                for complex games with large search spaces.
+              </p>
+              <br />
+            </section>
+          </div>
+
+          <div id="unit3" class="formatted-text">
+            <!-- Unit 3 text -->
+            <h2>UNIT 3: Knowledge & Reasoning</h2>
+            <br />
+            <section>
+              <h3>3.1 Knowledge Representation issues:</h3>
+              <br />
+              <p>
+                In AI, knowledge representation involves structuring information
+                for machine understanding and problem-solving. Key issues
+                include expressiveness, ensuring adequate representation of
+                real-world complexity, and formalism, selecting clear
+                representation languages like predicate logic.
+              </p>
+              <br />
+              <p>
+                Completeness and soundness ensure all necessary knowledge is
+                represented accurately without contradictions. Scalability and
+                efficiency ensure representation schemes can handle large
+                amounts of data without computational overload.
+              </p>
+              <br />
+              <p>
+                Integration of diverse knowledge sources, handling uncertainty
+                and incompleteness, and creating ontologies for semantic clarity
+                are essential. Representations must also adapt to dynamic
+                environments and be understandable by humans for validation and
+                trust.
+              </p>
+              <br />
+              <p>
+                In summary, AI knowledge representation must balance
+                expressiveness, efficiency, and adaptability while ensuring
+                completeness, soundness, and human interpretability.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.2 Representation and Mapping:</h3>
+              <br />
+              <p>
+                Representation and mapping play vital roles in Artificial
+                Intelligence (AI), facilitating the organization and utilization
+                of knowledge for reasoning and decision-making.
+              </p>
+              <br />
+              <p>
+                Representation involves structuring information into a format
+                comprehensible by AI systems, utilizing formalisms like logic,
+                graphs, or rules. Key aspects include structured organization,
+                abstraction to simplify complexities, expressiveness to capture
+                essential features, and formal languages such as logic or
+                semantic networks.
+              </p>
+              <br />
+              <p>
+                Mapping, on the other hand, establishes connections between
+                different domains or concepts, enabling the transfer of
+                knowledge and understanding relationships. It involves linking
+                entities, transferring knowledge across representations,
+                understanding relationships, and translating information between
+                formats.
+              </p>
+              <br />
+              <p>
+                These concepts are crucial in AI for reasoning, decision-making,
+                and problem-solving. Effective representation enables machines
+                to perform tasks like reasoning and inference, while clear
+                mappings aid in making informed decisions and modeling complex
+                problems.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.3 Approaches to Knowledge Representation:</h3>
+              <br />
+              <p>
+                Approaches to knowledge representation in Artificial
+                Intelligence (AI) encompass various methodologies and formalisms
+                aimed at structuring and encoding knowledge for AI systems.
+                These approaches include logical or propositional
+                representation, semantic networks and frames, ontologies and
+                knowledge graphs, rule-based systems, object-oriented
+                representations, probabilistic representations, and
+                connectionist approaches.
+              </p>
+              <br />
+              <p>
+                Logical representation involves predicate logic, first-order
+                logic, and modal logic for expressing facts, relationships, and
+                rules in a formal manner. Semantic networks and frames utilize
+                nodes and arcs to represent relationships between entities, with
+                frames providing a more structured organization. Ontologies and
+                knowledge graphs define hierarchical models and graph-based
+                structures for representing concepts and relationships within
+                domains.
+              </p>
+              <br />
+              <p>
+                Rule-based systems use production rules and expert systems to
+                trigger actions or inferences based on specific conditions.
+                Object-oriented representation applies concepts from
+                object-oriented programming to model entities as objects with
+                properties and behaviors, while probabilistic representations,
+                such as Bayesian networks and Markov models, handle
+                probabilistic relationships and state transitions.
+              </p>
+              <br />
+              <p>
+                Connectionist approaches, like neural networks, learn from
+                patterns and examples, utilizing interconnected nodes to model
+                complex patterns. Each approach offers varying degrees of
+                expressiveness, scalability, and effectiveness for reasoning and
+                inference in AI systems, depending on the type of knowledge and
+                domain requirements.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.4 Issues in Knowledge Representation:</h3>
+              <br />
+              <p>
+                Issues in knowledge representation within Artificial
+                Intelligence (AI) encompass challenges related to structuring,
+                organizing, and encoding knowledge in a manner that AI systems
+                can effectively comprehend and utilize. These issues are crucial
+                for building AI systems capable of accurately modeling
+                real-world knowledge and performing various tasks.
+              </p>
+              <br />
+              <p>
+                Expressiveness and Representation Formalism: Finding a
+                representation formalism that adequately captures the complexity
+                of real-world knowledge and selecting appropriate formal
+                languages or structures are key challenges.
+              </p>
+              <br />
+              <p>
+                Completeness and Soundness: Ensuring that representation schemes
+                accommodate all necessary knowledge for the domain and
+                accurately reflect knowledge without contradictions are
+                essential aspects.
+              </p>
+              <br />
+              <p>
+                Scalability and Efficiency: Representations should scale
+                efficiently with growing knowledge volumes and be processable
+                for reasoning, inference, and retrieval tasks.
+              </p>
+              <br />
+              <p>
+                Integration of Different Knowledge Sources: Integrating
+                knowledge from various sources into a unified representation and
+                merging structured, semi-structured, and unstructured data
+                require thoughtful design.
+              </p>
+              <br />
+              <p>
+                Uncertainty and Incompleteness: Handling uncertain or
+                probabilistic information and representing incomplete knowledge
+                are crucial for effective reasoning and decision-making.
+              </p>
+              <br />
+              <p>
+                Ontologies and Semantic Ambiguity: Creating ontologies for
+                shared meaning across systems and resolving semantic ambiguity
+                in terms or concepts are important for clear interpretation.
+              </p>
+              <br />
+              <p>
+                Dynamic and Adaptive Knowledge: Representations should adapt to
+                changing knowledge or environments, and mechanisms for learning
+                new knowledge or modifying existing representations based on
+                experience are necessary.
+              </p>
+              <br />
+              <p>
+                Human Understandability: Representations should be
+                understandable by humans for validation, debugging, and trust
+                purposes, ensuring interpretability even with complex
+                representations.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>
+                3.5 Using Predicate logic: Presenting simple fact in logic:
+              </h3>
+              <br />
+              <p>
+                Predicate logic is a formal language utilized in AI and
+                logic-based systems to represent knowledge and relationships
+                logically. It extends propositional logic by introducing
+                constants and predicates. Constants represent specific objects,
+                while predicates denote relationships or properties attributed
+                to objects.
+              </p>
+              <br />
+              <p>
+                For instance, "Likes(x, y)" signifies that 'x' likes 'y,' where
+                'x' and 'y' are variables representing objects. Simple facts
+                like "Alice likes Bob" can be expressed as "Likes(Alice, Bob),"
+                with 'Likes' as the predicate and 'Alice' and 'Bob' as
+                constants.
+              </p>
+              <br />
+              <p>
+                Predicates can take variables as arguments, enabling more
+                general statements. Multiple facts can be represented using
+                logical conjunctions (AND) or disjunctions (OR).
+              </p>
+              <br />
+              <p>
+                For example, "Alice likes Bob" AND "Bob likes Carol" is
+                represented as "Likes(Alice, Bob) AND Likes(Bob, Carol)," while
+                "Alice likes Bob" OR "Alice likes Carol" is denoted by
+                "Likes(Alice, Bob) OR Likes(Alice, Carol)."
+              </p>
+              <br />
+              <p>
+                Quantifiers, such as the universal quantifier (∀) and
+                existential quantifier (∃), express the scope of variables. The
+                universal quantifier indicates that a statement holds for all
+                objects, as in ∀x Likes(Alice, x), while the existential
+                quantifier signifies that a statement holds for at least one
+                object, as in ∃x Likes(Alice, x).
+              </p>
+              <br />
+              <p>
+                Predicate logic provides a powerful framework for representing
+                and reasoning about knowledge in AI systems.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.6 Representing instant and ISA relationship:</h3>
+              <br />
+              <p>
+                In the realm of Artificial Intelligence (AI), understanding the
+                'is-a' (ISA) relationship and instances is crucial for
+                structuring knowledge about categories and their specific
+                instances. This concept establishes hierarchical connections
+                between entities based on class-subclass associations,
+                portraying inheritance relationships.
+              </p>
+              <br />
+              <p>
+                For instance, "Car is a Vehicle" and "Rose is a Flower"
+                exemplify subclass instances inheriting properties from their
+                superclass categories. Representation of the ISA relationship
+                typically involves organizing information hierarchically, with
+                superclass categories like 'Vehicle' and 'Flower' containing
+                subclass instances such as 'Car,' 'Truck,' 'Rose,' and 'Tulip.'
+              </p>
+              <br />
+              <p>
+                Instances, on the other hand, refer to specific objects falling
+                under a particular category or class. For instance, an instance
+                of 'Car' might possess attributes like make, model, color, and
+                year, while an instance of 'Rose' could have characteristics
+                such as color, petal count, and fragrance.
+              </p>
+              <br />
+              <p>
+                Understanding the 'is-a' relationship and instances in AI is
+                crucial for organizing knowledge effectively, facilitating
+                reasoning, classification, and identification of relationships.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.7 Computable Functions and predicates:</h3>
+              <br />
+              <p><strong>Computable Functions:</strong></p>
+              <br />
+              <p>
+                Computable functions are mathematical functions that can be
+                computed by a computational system using algorithms or rules.
+              </p>
+              <br />
+              <p>
+                They are characterized by Turing completeness, meaning they can
+                be computed by a Turing machine.
+              </p>
+              <br />
+              <p>
+                These functions are associated with deterministic algorithms,
+                producing consistent outputs for the same inputs.
+              </p>
+              <br />
+              <p>
+                Examples include basic arithmetic operations (addition,
+                subtraction, multiplication), trigonometric functions, and
+                exponentiation.
+              </p>
+              <br />
+              <p>
+                Computable functions are represented using mathematical formulas
+                or expressions and can be evaluated by algorithms or programs.
+              </p>
+              <br />
+              <p><strong>Computable Predicates:</strong></p>
+              <br />
+              <p>
+                Computable predicates are logical statements or conditions that
+                can be evaluated to either true or false by an algorithmic
+                process.
+              </p>
+              <br />
+              <p>
+                They represent relationships, conditions, or properties about
+                entities within a domain.
+              </p>
+              <br />
+              <p>
+                Predicates involve logical operations and are evaluated based on
+                certain criteria.
+              </p>
+              <br />
+              <p>
+                Examples include questions like "Is X greater than Y?" or "Is
+                this object a member of a certain category?"
+              </p>
+              <br />
+              <p>
+                Similar to computable functions, computable predicates are
+                associated with algorithms for evaluation.
+              </p>
+              <br />
+              <p><strong>Significance in AI:</strong></p>
+              <br />
+              <p>
+                Logical Reasoning: Computable functions and predicates are vital
+                in logical reasoning and decision-making within AI systems.
+              </p>
+              <br />
+              <p>
+                Predicate Logic in Representing Knowledge: Predicates play a
+                significant role in representing relationships and constraints
+                in knowledge representation systems.
+              </p>
+              <br />
+              <p>
+                AI Algorithms: Computable functions are essential in various AI
+                algorithms for tasks such as optimization, search, and pattern
+                recognition.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.8 Resolution:</h3>
+              <br />
+              <p>Resolution in AI:</p>
+              <p>
+                Resolution is a theorem proving technique developed by
+                mathematician John Alan Robinson in 1965. It is used to prove
+                conclusions from given statements by building refutation proofs,
+                which are proofs by contradictions. The technique operates
+                efficiently on conjunctive normal form (CNF) or clausal form.
+              </p>
+              <br />
+              <p><strong>Key Concepts:</strong></p>
+              <br />
+              <p>
+                <strong>Clause:</strong> A clause is a disjunction of literals,
+                representing an atomic sentence. It's also known as a unit
+                clause.
+              </p>
+              <br />
+              <p>
+                <strong>Conjunctive Normal Form (CNF):</strong> Sentences
+                represented as a conjunction of clauses.
+              </p>
+              <br />
+              <p>
+                <strong>Resolution Rule:</strong> Involves resolving two clauses
+                by identifying complementary literals and unifying them.
+              </p>
+              <br />
+              <p><strong>Example:</strong></p>
+              <br />
+              <p>
+                Consider two clauses: [Animal(g(x)) V Loves(f(x), x)] and
+                [￢Loves(a, b) V ￢Kills(a, b)]. Complementary literals are
+                Loves(f(x), x) and ￢Loves(a, b), which can be unified to
+                generate a resolvent clause: [Animal(g(x)) V ￢Kills(f(x), x)].
+              </p>
+              <br />
+              <p><strong>Steps for Resolution:</strong></p>
+              <br />
+              <ol>
+                <li>Convert facts into first-order logic.</li>
+                <li>Convert FOL statements into CNF.</li>
+                <li>
+                  Negate the statement that needs to be proved (proof by
+                  contradiction).
+                </li>
+                <li>Draw resolution graph and perform unification.</li>
+              </ol>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.9 Natural Deduction:</h3>
+              <br />
+              <p>Natural Deduction in AI and Logic:</p>
+              <br />
+              <p>
+                Natural deduction is a formal system utilized in logic and AI
+                for reasoning, theorem proving, and logical inference. It
+                facilitates deductive reasoning by employing rules of inference
+                in a structured, step-by-step manner.
+              </p>
+              <br />
+              <p><strong>Core Elements:</strong></p>
+              <br />
+              <p>
+                <strong>Assumptions (Hypotheses):</strong> The proof begins with
+                assumptions or hypotheses, serving as starting points.
+              </p>
+              <br />
+              <p>
+                <strong>Inference Rules:</strong> Natural deduction employs
+                rules dictating how to move from assumptions to conclusions,
+                facilitating the derivation of new statements.
+              </p>
+              <br />
+              <p><strong>Example of Inference Rules:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Introduction Rules:</strong> These introduce new
+                  logical connectives or quantifiers. For instance,
+                  ∧-Introduction introduces conjunctions like P ∧ Q if both P
+                  and Q are proven separately.
+                </li>
+                <li>
+                  <strong>Elimination Rules:</strong> These eliminate logical
+                  connectives or quantifiers. For example, ∧-Elimination allows
+                  deriving P or Q individually from a conjunction P ∧ Q.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Proof Process:</strong></p>
+              <br />
+              <ol>
+                <li>
+                  Assumption Introduction: Commence the proof by assuming a
+                  statement or hypothesis.
+                </li>
+                <li>
+                  Application of Inference Rules: Utilize inference rules to
+                  derive new statements or justify logical steps, employing
+                  introduction and elimination rules for different logical
+                  connectives.
+                </li>
+                <li>
+                  Derivation of Conclusions: Progress through the proof,
+                  deducing new statements and moving towards the intended
+                  conclusion.
+                </li>
+                <li>
+                  Discharge of Assumptions: Once an assumption is discharged
+                  (closed), the proof concludes, and the derived conclusion is
+                  deemed valid based on the assumptions made.
+                </li>
+              </ol>
+              <br />
+            </section>
+
+            <section>
+              <h3>
+                3.10 Representing knowledge using rules: Procedural verses
+                declarative knowledge:
+              </h3>
+              <br />
+              <p>
+                <strong>Knowledge Representation in AI:</strong> It involves
+                structuring information for reasoning, decision-making, and
+                problem-solving in AI systems.
+              </p>
+              <br />
+              <p><strong>Procedural vs. Declarative Knowledge:</strong></p>
+              <br />
+              <p>
+                <strong>Procedural Knowledge:</strong> Focuses on defining
+                step-by-step procedures to achieve a specific outcome.
+              </p>
+              <br />
+              <p>
+                <strong>Declarative Knowledge:</strong> Describes facts,
+                properties, or relationships between entities without detailing
+                the steps.
+              </p>
+              <br />
+              <p><strong>Forms of Representation:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Procedural Knowledge:</strong> Represented using
+                  algorithms, rules, or instructions.
+                </li>
+                <li>
+                  <strong>Declarative Knowledge:</strong> Represented using
+                  facts, rules, assertions, or statements.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Comparison:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Nature:</strong> Procedural focuses on "how," while
+                  declarative focuses on "what."
+                </li>
+                <li>
+                  <strong>Usage:</strong> Procedural suits algorithms and
+                  processes, while declarative is used in knowledge bases and
+                  reasoning systems.
+                </li>
+                <li>
+                  <strong>Flexibility and Understandability:</strong>
+                  Declarative knowledge is often more flexible and
+                  understandable than procedural knowledge.
+                </li>
+              </ul>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.11 Logic Programming:</h3>
+              <br />
+              <p>
+                Logic Programming in AI: It's a paradigm using logic to express
+                programs and represent knowledge, primarily using Prolog, a
+                language for symbolic computation.
+              </p>
+              <br />
+              <p><strong>Basics of Logic Programming:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Declarative Style:</strong> Programs describe what
+                  should be done, leaving the system to determine how.
+                </li>
+                <li>
+                  <strong>Rule-Based Programming:</strong> Defined by a set of
+                  rules, facts, and relations governing system behavior.
+                </li>
+                <li>
+                  <strong>Logical Inference:</strong> Interprets programs as
+                  logical statements and uses inference for solutions.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Key Components:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Facts:</strong> Represent basic knowledge or
+                  assertions about the problem domain.
+                </li>
+                <li>
+                  <strong>Rules:</strong> Conditional statements defining
+                  relationships or conditions.
+                </li>
+                <li>
+                  <strong>Queries:</strong> Questions posed to the system to
+                  seek information or solutions.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Prolog Language:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Horn Clauses:</strong> Primary constructs with a head
+                  and body, resembling logical implications.
+                </li>
+                <li>
+                  <strong>Unification:</strong> Matches and binds variables to
+                  values for predicate evaluation.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Usage in AI:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Knowledge Representation:</strong> Effective in
+                  modeling domains, rules, and relationships.
+                </li>
+                <li>
+                  <strong>Expert Systems:</strong> Utilized to represent
+                  expertise and reasoning.
+                </li>
+                <li>
+                  <strong>Natural Language Processing (NLP):</strong> Applied in
+                  certain NLP tasks for linguistic structure processing.
+                </li>
+                <li>
+                  <strong>Symbolic Computation:</strong> Used for tasks like
+                  theorem proving, puzzle solving, and symbolic manipulation.
+                </li>
+              </ul>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.12 Forward verses Backward reasoning:</h3>
+              <br />
+              <p>
+                Forward chaining as the name suggests, start from the known
+                facts and move forward by applying inference rules to extract
+                more data, and it continues until it reaches to the goal,
+                whereas backward chaining starts from the goal, move backward by
+                using inference rules to determine the facts that satisfy the
+                goal.
+              </p>
+              <br />
+              <p>
+                Forward chaining is called a data-driven inference technique,
+                whereas backward chaining is called a goal-driven inference
+                technique.
+              </p>
+              <br />
+              <p>
+                Forward chaining is known as the down-up approach, whereas
+                backward chaining is known as a top-down approach.
+              </p>
+              <br />
+              <p>
+                Forward chaining uses breadth-first search strategy, whereas
+                backward chaining uses depth-first search strategy.
+              </p>
+              <br />
+              <p>
+                Forward and backward chaining both applies Modus ponens
+                inference rule.
+              </p>
+              <br />
+              <p>
+                Forward chaining can be used for tasks such as planning, design
+                process monitoring, diagnosis, and classification, whereas
+                backward chaining can be used for classification and diagnosis
+                tasks.
+              </p>
+              <br />
+              <p>
+                Forward chaining can be like an exhaustive search, whereas
+                backward chaining tries to avoid the unnecessary path of
+                reasoning.
+              </p>
+              <br />
+              <p>
+                In forward-chaining there can be various ASK questions from the
+                knowledge base, whereas in backward chaining there can be fewer
+                ASK questions.
+              </p>
+              <br />
+              <p>
+                Forward chaining is slow as it checks for all the rules, whereas
+                backward chaining is fast as it checks few required rules only.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.13 Matching:</h3>
+              <br />
+              <p><strong>Definition of Matching:</strong></p>
+              <br />
+              <p>
+                Matching involves comparing two or more structures to identify
+                similarities or differences. These structures can represent
+                various objects, including physical entities, words or phrases,
+                classes, concepts, or relations between entities.
+              </p>
+              <br />
+              <p><strong>Applications of Matching:</strong></p>
+              <br />
+              <p>
+                Matching is essential in a wide range of programs and AI
+                applications, including speech recognition, natural language
+                understanding, vision, learning, automated reasoning, planning,
+                automatic programming, and expert systems.
+              </p>
+              <br />
+              <p><strong>Types of Matching:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  <strong>Exact Matching:</strong> Compares structures for exact
+                  equality, where any difference leads to a failed match.
+                </li>
+                <li>
+                  <strong>Partial Matching:</strong> Permits transformations in
+                  patterns to achieve equality, allowing for variations or
+                  omissions in components.
+                </li>
+                <li>
+                  <strong>Fuzzy Matching:</strong> Considers an entity's degree
+                  of membership in one or more classes, suitable when boundaries
+                  between classes are not distinct.
+                </li>
+              </ul>
+              <br />
+              <p><strong>Matching Techniques:</strong></p>
+              <br />
+              <p>
+                Matching techniques vary based on factors such as representation
+                scheme, matching criteria, choice of measure, and type of output
+                required. Techniques may involve simple comparisons,
+                unifications, or transformations of structures into a common
+                schema before matching.
+              </p>
+              <br />
+              <p><strong>Output of Matching:</strong></p>
+              <br />
+              <p>
+                The output of the matching process can range from a simple yes
+                or no response to a detailed annotation of similarities and
+                differences between matched objects. It may include variable
+                bindings, lists of similarities or differences, or overall
+                measures of similarity.
+              </p>
+              <br />
+              <p><strong>Factors Influencing Matching Algorithm:</strong></p>
+              <br />
+              <ul>
+                <li>
+                  Choice of representation scheme for objects being matched.
+                </li>
+                <li>Criteria for matching (exact, partial, fuzzy, etc.).</li>
+                <li>
+                  Selection of a suitable measure for performing the match based
+                  on chosen criteria.
+                </li>
+                <li>Type of match description required for output.</li>
+              </ul>
+              <br />
+            </section>
+
+            <section>
+              <h3>3.14 Control Knowledge:</h3>
+              <br />
+              <p>
+                Control knowledge in Artificial Intelligence (AI) guides the
+                reasoning, decision-making, and problem-solving processes of AI
+                systems. It encompasses strategies, heuristics, search
+                algorithms, problem-solving methods, and control parameters.
+                Strategies and heuristics dictate actions, like prioritizing
+                moves in a chess-playing AI. Search algorithms determine how
+                solutions are found, balancing exploration and exploitation.
+                Problem-solving methods select techniques like rule-based
+                systems or neural networks. Control parameters adjust behavior,
+                such as setting thresholds in machine learning algorithms.
+              </p>
+              <br />
+              <p>
+                Control knowledge is vital for adaptability, allowing AI systems
+                to adjust strategies based on changing scenarios. It enhances
+                efficiency and performance by selecting appropriate strategies
+                or algorithms. It also encapsulates domain-specific expertise,
+                aligning decisions with domain requirements. Examples include
+                routing algorithms in network systems, strategies for
+                game-playing AI, and decision-making in autonomous vehicles.
+              </p>
+              <br />
+              <p>
+                Challenges include optimization, balancing efficiency and
+                accuracy, ensuring adaptability to varying conditions, and
+                requiring deep domain expertise for effective design. In
+                engineering exams, understanding control knowledge is crucial
+                for designing AI systems tailored to specific tasks, optimizing
+                performance, and addressing challenges effectively.
+              </p>
+              <br />
+            </section>
+          </div>
+
+          <div id="unit4" class="formatted-text">
+            <!-- Unit 4 text -->
+            <h2>UNIT 4: Probabilistic Reasoning</h2>
+            <br />
+            <section>
+              <h3>4.1 Representing Knowledge in an uncertain domain:</h3>
+              <br />
+              <p>
+                Representing knowledge in uncertain domains involves various
+                approaches to deal with uncertainty. Three primary methods
+                discussed are probability theory, fuzzy logic, and truth
+                maintenance systems.
+              </p>
+              <br />
+              <p>
+                <strong>Probability Theory:</strong> Probability theory deals
+                with sets of possible worlds, represented by a sample space (Ω).
+                Each possible world (ω) is associated with a numerical
+                probability (P(ω)). It allows for the calculation of
+                probabilities for events like coin tosses or combinations of
+                events. For example, the probability of two independent events
+                occurring together is the product of their individual
+                probabilities.
+              </p>
+              <br />
+              <p>
+                <strong>Fuzzy Logic:</strong> Fuzzy logic addresses uncertainty
+                by allowing for approximate reasoning. Unlike predicate logic
+                and probability-based methods, fuzzy logic handles fuzzy
+                quantifiers, providing a systematic framework for dealing with
+                imprecise information. It subsumes predicate logic and
+                probability theory, offering a comprehensive approach to
+                uncertainty management.
+              </p>
+              <br />
+              <p>
+                <strong>Truth Maintenance Systems (TMS):</strong> TMS records
+                and maintains the reasons for program beliefs, allowing for
+                assumption-making and belief revision when new information
+                contradicts existing beliefs. It operates by storing the latest
+                truth value of predicates, facilitating the adaptation of
+                beliefs over time.
+              </p>
+              <br />
+              <p>
+                Additionally, Bayesian networks are introduced as a data
+                structure to represent dependencies among variables in uncertain
+                domains. These networks, represented as directed acyclic graphs,
+                use conditional probability distributions to quantify the effect
+                of parents on each node. Bayesian networks capture conditional
+                independence relationships among variables, providing a concise
+                representation of uncertainty in complex domains.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.2 The semantics of Bayesian networks:</h3>
+              <br />
+              <p>
+                Bayesian networks, fundamental in handling uncertainty, are
+                probabilistic graphical models representing variables and their
+                dependencies through directed acyclic graphs (DAGs). These
+                networks, synonymous with Bayes networks or belief networks,
+                find application in prediction, anomaly detection, diagnostics,
+                and decision making in uncertain scenarios.
+              </p>
+              <br />
+              <p>
+                Their semantics can be understood in two ways: as a
+                representation of the joint probability distribution or as an
+                encoding of conditional independence statements.
+              </p>
+              <br />
+              <p>
+                The former view aids in constructing networks, while the latter
+                assists in designing inference procedures. Constructing Bayesian
+                networks involves determining node ordering and establishing
+                conditional independence relationships, ensuring that each node
+                is conditionally independent of its predecessors given its
+                parents. This ensures network acyclicity and efficient
+                representation.
+              </p>
+              <br />
+              <p>
+                The compactness of Bayesian networks is crucial for handling
+                domains with numerous variables. Locally structured systems,
+                where each variable interacts directly with a bounded number of
+                others, enable efficient representation. Correct node ordering
+                is pivotal for compactness; incorrect ordering may lead to
+                redundant links and complex probability judgments.
+              </p>
+              <br />
+              <p>
+                Furthermore, the topological semantics of Bayesian networks
+                imply conditional independence relationships, ensuring that
+                nodes are independent of non-descendants given their parents.
+                This concept, illustrated through the Markov blanket,
+                underscores the network's ability to represent complex
+                dependencies efficiently.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.3 Dempster-Shafer theory:</h3>
+              <br />
+              <p>
+                Dempster-Shafer Theory (DST), proposed by Arthur P. Dempster and
+                Glenn Shafer, emerged as an evidence theory in response to
+                limitations in Bayesian theory. Unlike Bayesian probability,
+                which focuses on single evidence and struggles with describing
+                ignorance, DST amalgamates all potential outcomes of a problem.
+              </p>
+              <br />
+              <p>
+                Illustrated through a murder mystery scenario, DST demonstrates
+                how different combinations of suspects could have committed the
+                crime. It utilizes sets of possible conclusions (P) where each
+                conclusion must be mutually exclusive. The Power Set, containing
+                2^n elements, represents all possible subsets of the possible
+                conclusions.
+              </p>
+              <br />
+              <p>
+                Mass function (m) interprets evidence for a set and assigns
+                belief and plausibility based on subsets intersecting with the
+                set. Belief in a set is the sum of masses of its subsets, while
+                plausibility is the sum of masses of sets intersecting with it.
+              </p>
+              <br />
+              <p>
+                DST ensures that the probability of all events aggregates to 1,
+                reducing ignorance as more evidence is added. Its combination
+                rule facilitates the integration of various possibilities,
+                leading to a reduction in the uncertainty interval.
+              </p>
+              <br />
+              <p>
+                Despite its advantages in representing diagnose hierarchies and
+                providing freedom to consider evidence, DST's main disadvantage
+                lies in its high computational effort due to dealing with 2^n
+                sets.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.4 Fuzzy sets and fuzzy logics:</h3>
+              <br />
+              <p>
+                Fuzzy logic, introduced by Lofti Zadeh in 1965, revolutionized
+                problem-solving by accommodating uncertainty between true and
+                false values. Unlike Boolean logic's binary approach, fuzzy
+                logic allows for multiple truth values between 0 and 1, offering
+                a flexible solution to real-life problems. Grounded in the Fuzzy
+                Set Theory, it extends the range of possibilities beyond
+                traditional computing paradigms.
+              </p>
+              <br />
+              <p>
+                Key characteristics of fuzzy logic include its flexibility,
+                applicability to approximate or uncertain reasoning, and ability
+                to handle nonlinear functions of arbitrary complexity. It
+                emphasizes degrees of truth, reflecting the inherent uncertainty
+                in many real-world scenarios. Fuzzy logic finds applications in
+                diverse fields such as decision-making support systems,
+                automotive control, defense, pattern recognition, and finance.
+              </p>
+              <br />
+              <p>
+                The architecture of a fuzzy logic system comprises four main
+                components: Rule Base, Fuzzification, Inference Engine, and
+                Defuzzification. Each component plays a crucial role in
+                processing information and generating precise outputs.
+                Fuzzification transforms crisp inputs into fuzzy values, while
+                the Inference Engine matches inputs to predefined rules for
+                decision-making. Defuzzification converts fuzzy outputs into
+                crisp values for user acceptance.
+              </p>
+              <br />
+              <p>
+                Membership functions in fuzzy sets quantify linguistic terms by
+                mapping elements to values between 0 and 1, enabling effective
+                representation of fuzzy concepts. Fuzzy set operations such as
+                union, intersection, and complementation facilitate the
+                manipulation of fuzzy data, allowing for complex reasoning and
+                decision-making.
+              </p>
+              <br />
+              <p>
+                Comparing classical set theory with fuzzy set theory highlights
+                fundamental differences in their treatment of boundaries and
+                uncertainty. While classical sets have sharp boundaries and
+                exact membership values, fuzzy sets embrace ambiguity and
+                partial membership, making them suitable for fuzzy controllers
+                and systems requiring nuanced decision-making.
+              </p>
+              <br />
+              <p>
+                Advantages of fuzzy logic include its similarity to human
+                reasoning, simplicity, efficiency in handling complex problems,
+                and flexibility in rule modification. However, drawbacks such as
+                slower runtime, potential inaccuracies, and the need for
+                extensive testing limit its suitability for applications
+                requiring high accuracy.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.5 Planning: Overview</h3>
+              <br />
+              <p>
+                Planning plays a crucial role in the realm of Artificial
+                Intelligence (AI), serving as the logical framework guiding the
+                actions of intelligent systems. It involves decision-making
+                processes aimed at achieving specific goals, whether it's
+                navigating a self-driving car, coordinating tasks in a smart
+                city, or solving complex problems like the block-world puzzle.
+              </p>
+              <br />
+              <p>
+                In the planning process, a sequence of actions is devised, each
+                with its preconditions and effects, forming the basis of plans.
+                Two fundamental approaches to planning are Forward State Space
+                Planning (FSSP) and Backward State Space Planning (BSSP). FSSP
+                progresses from an initial state to a target state, while BSSP
+                works backward from the goal to the initial state, minimizing
+                the branching factor.
+              </p>
+              <br />
+              <p>
+                Efficient planning often necessitates combining features of both
+                FSSP and BSSP, leading to strategies like Target Stack Planning,
+                which optimally balances soundness and branching factor
+                concerns. Target Stack Planning, utilized by algorithms such as
+                STRIPS, employs a stack-based approach to iteratively achieve
+                goals.
+              </p>
+              <br />
+              <p>
+                Moreover, non-linear planning techniques introduce flexibility
+                by exploring various goal orderings, potentially yielding
+                optimal solutions in terms of planning length. However, this
+                method involves a larger search space and complex algorithms.
+              </p>
+              <br />
+              <p>
+                In practical application, planning systems encompass essential
+                steps such as rule selection, problem condition calculation,
+                solution detection, dead-end detection, and solution refinement.
+                These steps ensure systematic and effective decision-making in
+                AI systems.
+              </p>
+              <br />
+              <p>
+                Overall, planning in AI involves sophisticated algorithms and
+                methodologies aimed at orchestrating actions towards predefined
+                objectives, making it a cornerstone in the development of
+                intelligent technologies and systems.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.6 Components of Planning System:</h3>
+              <br />
+              <p>
+                In the domain of artificial intelligence, planning systems are
+                integral for problem-solving and decision-making processes.
+                These systems consist of various components that orchestrate the
+                transition from an initial problem state to a desirable goal
+                state. Here's a breakdown of the key components:
+              </p>
+              <br />
+              <p>
+                <strong>States:</strong> Planning systems decompose the world
+                into environments defined by logical conditions and states.
+                States represent specific configurations of the environment and
+                serve as the foundation for defining the problem space. They are
+                often viewed as conjunctions of positive literals, reflecting
+                the current situation.
+              </p>
+              <br />
+              <p>
+                <strong>Goal:</strong> The goal represents the desired end state
+                of the planning process. It serves as a target for the system to
+                reach, guiding the generation of moves through the problem
+                space. Achieving the goal signifies the successful completion of
+                the planning task, although reaching it may be challenging,
+                especially in complex environments like games.
+              </p>
+              <br />
+              <p>
+                <strong>Actions:</strong> Actions are the fundamental units of
+                change in the planning process. They are defined by
+                preconditions, specifying the conditions that must be met for
+                the action to be executed, and effects, describing the changes
+                that occur in the environment when the action is performed.
+                Actions drive the transformation from one state to another.
+              </p>
+              <br />
+              <p>
+                <strong>Precondition:</strong> Precondition represents the
+                conditions that must be true in the current state for an action
+                to be valid. It ensures that actions are executed in appropriate
+                contexts, preventing unintended consequences.
+              </p>
+              <br />
+              <p>
+                <strong>Effect:</strong> Effects denote the changes that occur
+                in the environment when an action is executed successfully. They
+                describe how the state transitions from the pre-action state to
+                the post-action state, reflecting the impact of the action on
+                the environment.
+              </p>
+              <br />
+              <p>
+                <strong>Finding a Solution:</strong> A planning system aims to
+                find a sequence of actions that transform the initial problem
+                state into the goal state. This involves navigating through the
+                problem space, generating and evaluating potential moves until a
+                solution path is discovered. The representation of state
+                descriptions influences the approach to solving the problem.
+              </p>
+              <br />
+              <p>
+                <strong>Calculating the Dead State:</strong> During the search
+                for a solution, the planning system must detect paths that lead
+                to dead ends, i.e., states from which the goal state cannot be
+                reached. This involves reasoning forward from the initial state
+                or backward from the goal state, pruning paths that are unlikely
+                to lead to a solution. Detecting dead ends optimizes the search
+                process, focusing efforts on viable solution paths.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.7 Goal Stack Planning:</h3>
+              <br />
+              <p>
+                Goal Stack Planning is a classical AI technique employed for
+                achieving desired outcomes by decomposing overarching goals into
+                a sequence of subgoals and actions. It operates on the principle
+                of a stack data structure, organizing goals and subgoals in a
+                last-in, first-out (LIFO) manner.
+              </p>
+              <br />
+              <p>
+                <strong>Concept and Structure:</strong> In Goal Stack Planning,
+                the main goal is broken down into smaller, manageable subgoals,
+                forming a stack structure. Goals are stacked on top of each
+                other, reflecting their hierarchical relationships.
+              </p>
+              <br />
+              <p>
+                <strong>Planning Process:</strong> The process begins with an
+                initial state, representing the current state of the
+                environment. The final goal is placed on top of the goal stack.
+                Goals are decomposed into subgoals and actions, and appropriate
+                plans are generated to achieve them. Actions are selected and
+                applied to move the state closer to the desired outcome. As
+                goals are achieved, they are popped off the stack, and new
+                subgoals may emerge. The process continues until the final goal
+                is achieved or deemed unattainable.
+              </p>
+              <br />
+              <p>
+                <strong>Advantages and Limitations:</strong> Advantages of Goal
+                Stack Planning include its hierarchical structure, which
+                simplifies complex problems, and its flexibility in exploring
+                alternative plans. However, it may struggle with large search
+                spaces and can be sensitive to the order of goal decomposition
+                and action execution.
+              </p>
+              <br />
+              <p>
+                <strong>Application:</strong> Goal Stack Planning has found
+                applications in various AI systems, particularly in early AI
+                planning systems and robotics for task planning and control.
+              </p>
+              <br />
+            </section>
+
+            <section>
+              <h3>4.8 Hierarchical Planning:</h3>
+              <br />
+              <p>
+                Hierarchical planning in artificial intelligence is a strategic
+                approach that organizes tasks into multiple levels of
+                abstraction, enabling effective reasoning and planning in
+                complex domains. It involves breaking down high-level goals into
+                subgoals and actions, creating a hierarchy that allows
+                decision-making at various levels of abstraction. This approach
+                utilizes a tree or directed acyclic graph structure, with the
+                high-level goal as the root node and lower-level tasks or
+                actions as leaf nodes.
+              </p>
+              <br />
+              <p>
+                <strong>Key components of hierarchical planning:</strong>
+                High-level goals, task decomposition, planning hierarchy, plan
+                generation at different levels, plan synthesis, plan execution,
+                and plan adaptation. This comprehensive structure allows for
+                organized and systematic problem-solving. The definition
+                emphasizes breaking down complex tasks into smaller sub-tasks or
+                actions, enhancing the efficiency of intelligent agents.
+              </p>
+              <br />
+              <p>
+                <strong>Advantages of hierarchical planning:</strong>
+                Scalability, flexibility, abstraction, reuse of plans,
+                higher-level reasoning, and improved task organization. These
+                benefits make it a valuable tool in various applications, such
+                as robotics, autonomous systems, manufacturing, and
+                transportation. However, hierarchical planning faces challenges
+                like scalability issues, the complexity of the planning process,
+                and difficulties in adapting to dynamic environments.
+              </p>
+              <br />
+              <p>
+                <strong>Techniques employed in hierarchical planning:</strong>
+                Decomposition, abstraction, task allocation, and plan
+                integration. Decomposition techniques break down high-level
+                goals, abstraction methods represent tasks at different
+                abstraction levels, task allocation assigns tasks to appropriate
+                agents, and plan integration combines plans for execution.
+              </p>
+              <br />
+            </section>
+          </div>
+
+          <div id="unit5" class="formatted-text">
+            <!-- Unit 5 text -->
+            <h2>UNIT 5: Natural Language Processing</h2>
+            <br />
+            <p>
+              Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+              Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+              consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+              in, viverra quis, feugiat a, tellus.
+            </p>
+          </div>
+        </div>
+
+        <!-- New section for notes -->
+        <form method="post">
+          {% csrf_token %}
+          <div class="notes-section">
+            <h2>Save Your Useful Notes</h2>
+            <input
+              type="text"
+              name="subject_title"
+              placeholder="subject_title"
+              id="subject_title"
+              value="Artifical Intelligence"
+            />
+
+            <input type="text" name="title" placeholder="title" id="title" />
+            <div class="input-container">
+              <textarea
+                id="text"
+                name="text"
+                rows="10"
+                cols="50"
+                placeholder="Enter your notes here..."
+              ></textarea>
+            </div>
+            <br />
+            <button id="save-btn" type="submit">Save</button>
+          </div>
+        </form>
+        <a href="{% url 'allnotes' %}" class="home-button">view all notes;</a>
+        <a href="main.html" class="home-button">&#8962;</a>
+      </div>
+      x
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-link-heading">
+          Contact Us
+          <div class="gfg-info">
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=majorproject2024cse@gmail.com&su=&body=&bcc="
+              class="gfg-info-elems"
+              ><span
+                class="material-symbols-outlined"
+                style="color: var(--gfg-green); padding: 5px"
+                >mail</span
+              >majorproject2024cse@gmail.com</a
+            >
+          </div>
+
+          <a href="about.html"
+            ><div class="footer-link-heading">About Us</div></a
+          >
+        </div>
+
+        <div class="footer-strip"></div>
+      </div>
+    </footer>
+  </body>
+</html>

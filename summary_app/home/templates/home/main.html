@@ -1,0 +1,369 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a clone of the GeeksforGeeks front page made by Marc. This was made using pure HTML and CSS"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <!-- down chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- right chevron -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- sell tag -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- location  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- email -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- search -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- translate -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- calendar -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- play -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- note -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- air -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- plus -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- 3 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- code -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Smart Summary</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="top-container">
+        <ul class="dropdowns">
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >University<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-text"
+              >Branch<span class="material-symbols-outlined"
+                >expand_more</span
+              ></a
+            >
+          </li>
+        </ul>
+
+        <div id="logo">
+          <a href="main.html"
+            ><img src="logo.png" height="30px" width="160px"
+          /></a>
+        </div>
+
+        <ul class="interactions">
+          <li class="sign-in">
+            <a href="{% url 'registration' %}" style="padding: 0 20px 0 20px"
+              >Sign In</a
+            >
+          </li>
+        </ul>
+        <ul class="interactions">
+          <li class="sign-in">
+            <a href="{% url 'logout' %}" style="padding: 0 20px 0 20px"
+              >logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="topic-container">
+      <ul class="topics">
+        <li><a href="{% url 'dsa' %}">DSA</a></li>
+        <li><a href="{% url 'ai' %}">Artificial Intelligence</a></li>
+        <li><a href="{% url 'cc' %}">Machine Learning</a></li>
+        <li><a href="{% url 'cn' %}">Cloud Computing</a></li>
+        <li><a href="{% url 'daa' %}">Software Engineering</a></li>
+        <li><a href="{% url 'dbs' %}">Computer Network</a></li>
+        <li><a href="{% url 'ml' %}">Operating System</a></li>
+        <li><a href="{% url 'oops' %}">DBMS</a></li>
+        <li><a href="{% url 'os' %}">OOPs</a></li>
+        <li><a href="{% url 'se' %}">DAA</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="article-container">
+        <div class="main-articles">
+          <div id="spotlight"></div>
+
+          <ul class="articles">
+            <hr />
+
+            <hr />
+          </ul>
+
+          <div class="vid-box">
+            <div class="vid-title-wrapper">
+              <div class="green-heading">VIDEOS</div>
+            </div>
+            <div class="vids-cont">
+              <a
+                href="https://www.youtube.com/watch?v=uB3i-qV6VdM&list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI"
+              >
+                <img src="http://i3.ytimg.com/vi/uB3i-qV6VdM/hqdefault.jpg" />
+                <div class="vid-title">Artificial Intelligence Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=-D5u5HJbISc&list=PLqleLpAMfxGAf5rrWdm92WMK3-gsrxgz5"
+              >
+                <img src="https://i3.ytimg.com/vi/-D5u5HJbISc/hqdefault.jpg" />
+                <div class="vid-title">
+                  Data Structures and Algorithm Playlist
+                </div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=kz184QIO4ZQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T"
+              >
+                <img src="http://i3.ytimg.com/vi/kz184QIO4ZQ/hqdefault.jpg" />
+                <div class="vid-title">Machine Learning Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=2LaAJq1lB1Q&list=PL9ooVrP1hQOFtZ5oAAeOgi_nH-txMcDMu"
+              >
+                <img src="http://i3.ytimg.com/vi/2LaAJq1lB1Q/hqdefault.jpg" />
+                <div class="vid-title">Cloud Computing Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=b7hmU72GRaE&list=PLqleLpAMfxGB1g0xlYj2H6lyY2Q2ku7p9"
+              >
+                <img src="http://i3.ytimg.com/vi/b7hmU72GRaE/hqdefault.jpg" />
+                <div class="vid-title">Software Engineering Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=q3Z3Qa1UNBA&list=PLmXKhU9FNesSjFbXSZGF8JF_4LVwwofCd&index=1"
+              >
+                <img src="http://i3.ytimg.com/vi/q3Z3Qa1UNBA/hqdefault.jpg" />
+                <div class="vid-title">Computer Networks Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=bkSWJJZNgf8&list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"
+              >
+                <img src="http://i3.ytimg.com/vi/bkSWJJZNgf8/hqdefault.jpg" />
+                <div class="vid-title">Operating System Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=kBdlM6hNDAE&list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y"
+              >
+                <img src="http://i3.ytimg.com/vi/kBdlM6hNDAE/hqdefault.jpg" />
+                <div class="vid-title">Database Management Playlist</div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=AEo4KgwKYoU&list=PLqleLpAMfxGCbdaJ6SoExDfHrTfRDeWeG&index=1"
+              >
+                <img src="http://i3.ytimg.com/vi/AEo4KgwKYoU/hqdefault.jpg" />
+                <div class="vid-title">
+                  Data Structures and Algorithm Playlist
+                </div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/watch?v=u8JZ9gU5o4g&list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa"
+              >
+                <img src="http://i3.ytimg.com/vi/u8JZ9gU5o4g/hqdefault.jpg" />
+                <div class="vid-title">
+                  Design and Analysis of Algorithms Playlist
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <ul class="articles">
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+
+            <hr />
+          </ul>
+        </div>
+
+        <div class="side-articles">
+          <div class="whats-new-box">
+            <div class="green-heading">WHAT'S NEW</div>
+
+            <a href="#" class="new-card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/post-ads-banner/2022-11-22-12-55-55-Cip-gif-min.gif"
+                alt="card-img"
+              />
+              <div class="new-card-content">
+                <div class="new-card-head">Complete Video Lectures</div>
+                <div class="new-card-det-cont">
+                  <div class="view-det">View Details</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="new-card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/post-ads-banner/2022-11-22-12-55-30-Dsa-Gif-min.gif"
+                alt="card-img"
+              />
+              <div class="new-card-content">
+                <div class="new-card-head">
+                  Data Structures &amp; Core Engineering Subjects
+                </div>
+                <div class="new-card-det-cont">
+                  <div class="view-det">View Details</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="new-card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/post-ads-banner/2022-11-26-19-55-16-cds.gif"
+                alt="card-img"
+              />
+              <div class="new-card-content">
+                <div class="new-card-head">Complete Computer Science</div>
+                <div class="new-card-det-cont">
+                  <div class="view-det">View Details</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <section>
+        <div class="features">
+          <h1>Key Features</h1>
+          <div class="feature">
+            <i class="icon"></i>
+            <h3>Wide Range of Topics</h3>
+            <p>Access summaries on various computer engineering subjects</p>
+          </div>
+          <div class="feature">
+            <i class="icon"></i>
+            <h3>Robust Functionality</h3>
+            <p>
+              Similar to popular educational platforms for a seamless experience
+            </p>
+          </div>
+          <div class="feature">
+            <i class="icon"></i>
+            <h3>User-Friendly Interface</h3>
+            <p>Intuitive design for easy navigation and learning</p>
+          </div>
+          <div class="feature">
+            <i class="icon"></i>
+            <h3>Concise Summaries</h3>
+            <p>Get quick and easy-to-understand overviews of complex topics</p>
+          </div>
+          <!-- Add more feature blocks as needed -->
+        </div>
+      </section>
+    </main>
+    <br /><br />
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-link-heading">
+          Contact Us
+          <div class="gfg-info">
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=majorproject2024cse@gmail.com&su=&body=&bcc="
+              class="gfg-info-elems"
+              ><span
+                class="material-symbols-outlined"
+                style="color: var(--gfg-green); padding: 5px"
+                >mail</span
+              >majorproject2024cse@gmail.com</a
+            >
+          </div>
+
+          <a href="about.html"
+            ><div class="footer-link-heading">About Us</div></a
+          >
+        </div>
+
+        <div class="footer-strip"></div>
+      </div>
+    </footer>
+  </body>
+</html>
